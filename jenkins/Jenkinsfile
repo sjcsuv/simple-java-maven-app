@@ -19,6 +19,11 @@ pipeline {
                 }
             }
         }
+        stage('stage before complete') {
+            steps {
+                echo 'job completes'
+            }
+        }
         stage('complete') {
             steps {
                 echo 'job completes'
