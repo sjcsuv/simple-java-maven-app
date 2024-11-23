@@ -19,9 +19,9 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
+        stage('complete') {
             steps {
-                bat 'jenkins\\scripts\\deliver.bat'
+                echo 'job completes'
             }
         }
     }
